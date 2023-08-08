@@ -14,4 +14,7 @@ print(newString.find('6k')); # Finds the first occurence of a character.
 print(newString.find('meters',4,7)) # Both the args after the first one are optional they give the start and end point index for the string that you have to search for to find the substring and if it doesn't find the substring it will return -1.
 print(newString.count('2')) # Similar to find but just returns the count of the substring that is passed in.
 print(newString.count('2',1,10))
-
+randomBool = 'a' in 'bat'
+print(f'{randomBool} is for "a" in "bat"')
+randomBool2 = 2 in [1,4,5,6]
+print(randomBool2)
