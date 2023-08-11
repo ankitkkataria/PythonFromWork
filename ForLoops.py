@@ -13,3 +13,13 @@ for i in range(10,1,-1):
 
 for num in range(100,0,-2):
     print(f'num = {num}')
+          
+for char in 'WhatAreYouDoingBro':
+    if char == 'B':
+        break
+    print(char)
+
+for char in 'WhatAreYouDoingBro':
+    if(char in 'aeiou'):
+        continue
+    print(char)
