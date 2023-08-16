@@ -96,7 +96,7 @@ for student in testScores.keys(): # You can access values if you have the key.
 for entry in testScores.items(): # If you want the entire entry your testScores.items() it will return the list of tuples of your dictionary.
     print(entry)    
 
-for k,v in testScores.items(): # You can even destructure each of tuple here itself. (tuple is just a pair in c++)
+for k,v in testScores.items(): # You can even destructure each of tuple here itself.
     print(k,v)
 
 bestStudent = ''
@@ -106,3 +106,30 @@ for student,score in testScores.items():
         maxScore = score
         bestStudent = student
 print(f'The best perfoming student is {bestStudent} and he/she has {maxScore} marks')        
+
+
+# Merging and updating dictionaries
+
+d1 = {
+    'a': 1,
+    'b': 2,
+    'c': 3
+}
+
+d2 = {
+    'a': 'ambulance',
+    'd': 4,
+    'e': 5
+}
+
+d1.update(d2) # Everything from d2 will be pushed into d1. (If some key repeats the one being pushed in will win.)
+
+print(d1)
+
+d3 = d1 | d2 # This | is called the dictionary join operator here it will join both of those dictionaries and return you a new dictionary without updating the original dictionaries. (Also incase of same keys the one on the right (d2) will win.) (This | is only supported after python 3.9 before that people were used to using ** operator)
+print(d3)
+
+# Example of using ** operator
+
+d4 = {**d1, **d2} 
+print(d4)
