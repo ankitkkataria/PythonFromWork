@@ -8,6 +8,7 @@ randomList2 = list(range(2, 24))
 
 print(randomList)
 print(randomList2)
+
 len(
     randomList2
 )  # This here too will return the length of the array to you obviously while iterating you would want to got till one index less.
@@ -28,7 +29,7 @@ randomNums.insert(
 print(randomNums)
 # list.insert(indexWhereYouWantToInsert,whatYouWantToInsert)
 randomNumsSpliced = randomNums[1:4]
-randomNumsSpliced2 = randomNums[:5]
+randomNumsSpliced2 = randomNums[:5]  
 randomNumsSpliced3 = randomNums[5:]
 randomNumsSpliced4 = randomNums[
     1:8:2
@@ -84,10 +85,12 @@ print(numbers3)
 # You can also delete elements using the del statement.
 numbers3 = [1, 24, 23, 12, 1214, 2323]
 print(numbers3)
+
 del numbers3[
     2
 ]  # This will delete the number at index 2 in this array but won't return it.
 print(numbers3)
+
 del numbers3[
     ::2
 ]  # This will delete every second element from your list. (You can use this method to delete slices that's the only place using this makes a little bit of sense.)
