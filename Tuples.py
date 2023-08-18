@@ -38,3 +38,8 @@ print(randomBool)
 # Use them for data that shouldn't change
 # Some methods return them like dict.items()
 # They can be used as keys in a dictionary cause unlike lists these are immutable so if you want to do something like (lang,lat): 'Jind,Haryana' in a dictionary you can but you can't do [lang,lat] that's it.
+
+# Tuples can contain list as elements so just because tuples are immutable that doesn't mean it's elements have to be immutable as well.
+# But in sets all the elements must be immutable as well.
+
+
